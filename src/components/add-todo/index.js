@@ -35,7 +35,7 @@ function AddTodo(){
             onChange={collectInput}
             className={styles.AddTodoInput}
             placeholder="start typing..."/>
-            <button onClick={saveTodo}>Create</button>
+            <button className={`btn btn-info ${styles.btn}`} onClick={saveTodo}>Create</button>
         </section>
       )
 }
