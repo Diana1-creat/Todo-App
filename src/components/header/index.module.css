@@ -1,0 +1,15 @@
+.headerImage{
+    background-image: url(../../images/header-bg.jpg);
+    background-position: center;
+    height: 30vh;
+    margin: 5px 5px 0 5px;
+    border-radius: px;
+    
+}
+.headerh1{
+    margin:0 auto;
+    width: 60%;
+    padding-top: 50px;
+    color: white;
+    border-radius: 10px;
+}
