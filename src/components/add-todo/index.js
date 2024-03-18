@@ -16,11 +16,17 @@ function AddTodo() {
   //     setTodo(event.target.value);
   // }
 
-  function saveTodo() {
-    // Add new todo to existing list of todos
-    // todos.push(todo);
-    // Set all todos in local storage
-    setTodos([...todos, todo]);
+  async function saveTodo() {
+    //Post todo to todo-api
+    const response =await fetch("http://localhost:4000/todos",{
+      method:'POST',
+      body: JSON.stringify({
+          title:todo
+
+      })
+  });
+  const data= await response.json();
+  console.log (data)
     // wipe input
     setTodo("");
   }
